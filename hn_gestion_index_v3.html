@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="H&N Gestion — Independent investment company focused on Japanese listed equities." />
+  <title>H&N Gestion</title>
+  <style>
+    :root { --bg:#fff; --text:#111; --muted:#686868; --line:#d9d9d9; --max:1180px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:"Yu Mincho","Hiragino Mincho ProN","Hiragino Mincho Pro","Times New Roman",Georgia,serif;
+      line-height:1.8; -webkit-font-smoothing:antialiased;
+    }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(calc(100% - 48px),var(--max)); margin:0 auto; }
+    header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+    .nav { min-height:78px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
+    .brand { font-family:"Times New Roman",Georgia,serif; font-size:1.1rem; letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; }
+    .nav-links { display:flex; gap:30px; font-family:Arial,Helvetica,sans-serif; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; }
+    .nav-links a { color:#333; }
+    .nav-links a:hover { opacity:.55; }
+    .hero { min-height:82vh; display:flex; align-items:center; border-bottom:1px solid var(--line); }
+    .hero-inner { padding:110px 0 120px; }
+    .eyebrow { margin:0 0 26px; font-family:Arial,Helvetica,sans-serif; font-size:.76rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
+    h1 { max-width:980px; margin:0; font-family:"Times New Roman",Georgia,serif; font-size:clamp(3.7rem,8vw,7.8rem); font-weight:400; line-height:.94; letter-spacing:-.045em; }
+    .hero-copy { max-width:650px; margin:42px 0 0; font-size:clamp(1rem,1.6vw,1.22rem); color:#2c2c2c; }
+    .hero-rule { width:86px; margin-top:52px; border:0; border-top:1px solid #111; }
+    section { padding:110px 0; border-bottom:1px solid var(--line); }
+    .section-grid { display:grid; grid-template-columns:minmax(180px,.65fr) minmax(0,1.6fr); gap:90px; }
+    .section-title { margin:0; font-family:Arial,Helvetica,sans-serif; font-size:.78rem; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+    .lead { margin:0; font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.45; letter-spacing:-.015em; }
+    .body-copy { max-width:760px; margin-top:34px; color:#2f2f2f; font-size:1rem; }
+    .principles { margin-top:58px; border-top:1px solid var(--line); }
+    .principle { display:grid; grid-template-columns:80px 1fr; gap:24px; padding:28px 0; border-bottom:1px solid var(--line); }
+    .number { font-family:Arial,Helvetica,sans-serif; font-size:.76rem; color:var(--muted); letter-spacing:.08em; }
+    .principle h3 { margin:0 0 8px; font-size:1.16rem; font-weight:400; }
+    .principle p { margin:0; color:#4a4a4a; font-size:.95rem; }
+    .company-table { margin-top:12px; border-top:1px solid #111; }
+    .company-row { display:grid; grid-template-columns:180px 1fr; gap:28px; padding:22px 0; border-bottom:1px solid var(--line); }
+    .company-row dt,.company-row dd { margin:0; }
+    .company-row dt { font-family:Arial,Helvetica,sans-serif; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+    .company-row dd { font-size:.98rem; }
+    .contact-block { display:flex; flex-direction:column; align-items:flex-start; gap:14px; }
+    .contact-link { display:inline-block; padding-bottom:4px; border-bottom:1px solid #111; font-family:"Times New Roman",Georgia,serif; font-size:clamp(1.7rem,3vw,2.6rem); }
+    .contact-note { max-width:720px; margin:18px 0 0; color:var(--muted); font-family:Arial,Helvetica,sans-serif; font-size:.78rem; line-height:1.7; }
+    footer { padding:34px 0 42px; }
+    .footer-inner { display:flex; justify-content:space-between; gap:30px; color:var(--muted); font-family:Arial,Helvetica,sans-serif; font-size:.72rem; letter-spacing:.04em; }
+    @media (max-width:820px) {
+      .nav { min-height:68px; }
+      .nav-links { display:none; }
+      .hero { min-height:72vh; }
+      .hero-inner { padding:90px 0 96px; }
+      section { padding:78px 0; }
+      .section-grid { grid-template-columns:1fr; gap:38px; }
+      .company-row { grid-template-columns:1fr; gap:6px; }
+      .footer-inner { flex-direction:column; gap:8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">H&amp;N Gestion</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#business">Business</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#regional-mission">Yamanashi</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Independent Investment Partnership · Yamanashi, Japan</p>
+        <h1>H&amp;N<br>Gestion</h1>
+        <p class="hero-copy">A disciplined investment company focused on the long-term ownership and management of listed securities, with particular attention to opportunities in the Japanese equity market.</p>
+        <hr class="hero-rule" />
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container section-grid">
+        <h2 class="section-title">About</h2>
+        <div>
+          <p class="lead">We approach investing as the careful allocation of capital, grounded in fundamental analysis, patience and discipline.</p>
+          <div class="body-copy">
+            <p>H&amp;N Gestion is an independent investment company engaged principally in the ownership, management and trading of securities using its own capital.</p>
+            <p>Our work is centered on understanding businesses, assessing intrinsic value and taking investment decisions with a long-term perspective while maintaining rigorous risk control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy">
+      <div class="container section-grid">
+        <h2 class="section-title">Investment Philosophy</h2>
+        <div>
+          <p class="lead">Fundamental research first. Valuation second. Discipline always.</p>
+          <div class="principles">
+            <div class="principle"><div class="number">01</div><div><h3>Fundamental Research</h3><p>We seek to understand the economics, competitive position, management and long-term prospects of each business before forming an investment view.</p></div></div>
+            <div class="principle"><div class="number">02</div><div><h3>Valuation Discipline</h3><p>Investment decisions are made with reference to estimated intrinsic value, expected return and the margin of safety available at the prevailing market price.</p></div></div>
+            <div class="principle"><div class="number">03</div><div><h3>Independent Judgment</h3><p>We place emphasis on primary information, independent analysis and a willingness to differ from consensus when supported by evidence.</p></div></div>
+            <div class="principle"><div class="number">04</div><div><h3>Risk Management</h3><p>Capital preservation is integral to portfolio construction. Position sizing, liquidity and downside risk are considered alongside expected return.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business">
+      <div class="container section-grid">
+        <h2 class="section-title">Business</h2>
+        <div>
+          <p class="lead">Proprietary investment. Our capital, our decisions, our risk.</p>
+          <div class="body-copy">
+            <p>The company’s principal business is the holding, management and trading of securities for its own account, primarily domestic listed equities.</p>
+            <p>We aim to pursue rational and disciplined investment decisions, applying accumulated knowledge in corporate analysis, valuation and portfolio management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compliance">
+      <div class="container section-grid">
+        <h2 class="section-title">Compliance</h2>
+        <div>
+          <p class="lead">
+            No external capital. No client assets. Proprietary investment only.
+          </p>
+          <div class="body-copy">
+            <p>
+              H&amp;N Gestion does not solicit investment from the public or from
+              external investors, does not accept subscriptions or contributions
+              of capital for investment purposes, and does not manage assets on
+              behalf of clients or third parties.
+            </p>
+            <p>
+              All securities transactions are undertaken solely for our own account
+              using our own capital. We conduct our activities in strict compliance
+              with the Financial Instruments and Exchange Act of Japan and all other
+              applicable laws and regulations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="regional-mission">
+      <div class="container section-grid">
+        <h2 class="section-title">Yamanashi</h2>
+        <div>
+          <p class="lead">
+            Building an investment business outside Tokyo.
+          </p>
+          <div class="body-copy">
+            <p>
+              In Japan, investment-related companies, financial institutions and
+              investment professionals are overwhelmingly concentrated in Tokyo.
+              We have deliberately chosen to establish our base in Yamanashi.
+            </p>
+            <p>
+              We believe investment expertise and opportunity need not be confined
+              to the capital. From Yamanashi, H&amp;N Gestion aims to become an early
+              example of an independent investment partnership rooted in a regional
+              community, demonstrating that disciplined investment activity can be
+              built and sustained outside Japan's traditional financial centre.
+            </p>
+            <p>
+              Over time, we hope our presence can contribute, even in a modest way,
+              to the accumulation of investment knowledge, talent and business
+              opportunities in the region.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="container section-grid">
+        <h2 class="section-title">Company</h2>
+        <div>
+          <dl class="company-table">
+            <div class="company-row"><dt>Company</dt><dd>H&amp;N Gestion</dd></div>
+            <div class="company-row"><dt>Business</dt><dd>Proprietary holding, management and trading of securities using only the firm's own capital; no solicitation or acceptance of external investment capital</dd></div>
+            <div class="company-row"><dt>Focus</dt><dd>Japanese listed equities</dd></div>
+            <div class="company-row"><dt>Structure</dt><dd>Independent proprietary investment partnership</dd></div>
+            <div class="company-row"><dt>Location</dt><dd>Yamanashi, Japan</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container section-grid">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-block">
+          <p class="lead">For general enquiries.</p>
+          <!-- 自分のメールアドレスに変更してください -->
+          <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+          <p class="contact-note">This website is provided solely for general corporate information. Nothing contained herein constitutes investment advice, a recommendation, an offer, or a solicitation to buy or sell any security or financial product.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 H&amp;N Gestion. All rights reserved.</span>
+      <span>Independent Investment Partnership</span>
+    </div>
+  </footer>
+</body>
+</html>
